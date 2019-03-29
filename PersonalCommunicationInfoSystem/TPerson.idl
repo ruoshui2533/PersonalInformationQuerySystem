@@ -1,0 +1,16 @@
+module org
+{
+   module jcorba
+   {
+      struct Person
+      {
+      string name;
+      string email;
+      };
+      typedef sequence<Person> NPerson;
+      interface TCom
+      {
+         void getPersonInfo(out NPerson persons);
+      };
+   };
+};
